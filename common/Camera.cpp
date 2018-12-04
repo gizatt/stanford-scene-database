@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 void Camera::Reset(const Vec3f &Eye, const Vec3f &Up, const Vec3f &VecLookAt)
 {
     _eye = Eye;

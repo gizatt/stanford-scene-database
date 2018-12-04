@@ -1,8 +1,12 @@
+#pragma once
 //
 // Assets.h
 //
 
 #include "Common.h"
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 class Assets
 {
@@ -14,3 +18,5 @@ private:
     std::map<std::string, Model*> _models;
     std::map<std::string, GLuint> _textures;
 };
+
+}

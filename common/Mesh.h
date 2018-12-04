@@ -5,6 +5,8 @@
 #ifndef __MESH_H
 #define __MESH_H
 
+using namespace stanford_scene_database;
+
 #include "Common.h"
 
 struct MeshVertex

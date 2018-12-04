@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 void ModelInstance::Render()
 {
     glPushMatrix();

@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 Model::Model(const std::string &directory, const std::string &baseFilename, Assets &textureStore)
 {
     std::cout << "  Loading model: " << baseFilename << '\n';

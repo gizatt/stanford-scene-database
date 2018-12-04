@@ -1,8 +1,13 @@
+#pragma once
+
 //
 // Parameters.h
 //
 
 #include "Common.h"
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 struct Parameters
 {
@@ -13,3 +18,5 @@ struct Parameters
 
     std::string textQuery;
 };
+
+}

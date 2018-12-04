@@ -5,6 +5,8 @@
 #include "../common/Common.h"
 #include "sceneViewer.h"
 
+using namespace stanford_scene_database;
+
 void SceneViewer::Init()
 {
 	_params.Init("parameters.txt");

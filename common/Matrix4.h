@@ -1,8 +1,13 @@
+#pragma once
+
 //
 // Matrix4.h
 //
 
 #include "Vec3f.h"
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 class Matrix4
 {
@@ -82,3 +87,5 @@ private:
 };
 
 Matrix4 operator * (const Matrix4 &left, const Matrix4 &right);
+
+}

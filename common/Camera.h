@@ -1,8 +1,13 @@
+#pragma once
 //
 // Camera.h
 //
 
 #include "Common.h"
+
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 class Camera
 {
@@ -77,3 +82,4 @@ private:
     Vec3f _eye, _look, _up, _right, _worldUp;
     Matrix4 _matrix;
 };
+}

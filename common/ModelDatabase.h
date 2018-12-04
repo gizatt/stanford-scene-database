@@ -1,8 +1,13 @@
+#pragma once
+
 //
 // ModelDatabase.h
 //
 
 #include "Common.h"
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 struct ModelEntry
 {
@@ -27,3 +32,5 @@ public:
 private:
     std::map<std::string, ModelEntry> _entries;
 };
+
+}

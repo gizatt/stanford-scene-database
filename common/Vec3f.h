@@ -7,6 +7,8 @@
 
 #include <math.h>
 
+namespace stanford_scene_database {
+
 struct Vec3f
 {
     //
@@ -178,6 +180,8 @@ inline Vec3f operator - (const Vec3f &Left, const Vec3f &Right)
 inline Vec3f operator - (const Vec3f &V)
 {
     return Vec3f(-V.x, -V.y, -V.z);
+}
+
 }
 
 #endif

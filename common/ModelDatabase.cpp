@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 const ModelEntry& ModelDatabase::GetEntry(const std::string &modelHash) const
 {
     return _entries.find(modelHash)->second;

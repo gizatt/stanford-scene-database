@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 void Scene::Load(const Parameters &params, const std::string &filename, Assets &assets)
 {
     std::string sceneFilename = params.databaseDirectory + "scenes/" + filename + ".txt";

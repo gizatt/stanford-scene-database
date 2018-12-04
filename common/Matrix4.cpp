@@ -4,6 +4,8 @@
 
 #include "Matrix4.h"
 
+using namespace stanford_scene_database;
+
 Matrix4 Matrix4::Transpose() const
 {
     Matrix4 Result;
@@ -221,7 +223,7 @@ Matrix4 Matrix4::Translation(const Vec3f &Pos)
     return Result;
 }
 
-Matrix4 operator * (const Matrix4 &Left, const Matrix4 &Right)
+Matrix4 stanford_scene_database::   operator * (const Matrix4 &Left, const Matrix4 &Right)
 {
     Matrix4 Result;
     for(unsigned int i = 0; i < 4; i++)

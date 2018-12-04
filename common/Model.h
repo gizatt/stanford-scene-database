@@ -1,8 +1,14 @@
+#pragma once 
+
 //
 // Model.h
 //
 
 #include "Common.h"
+
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 class Assets;
 class Model
@@ -37,3 +43,5 @@ private:
     
     Vec3f _boundingBoxMin, _boundingBoxMax;
 };
+
+}

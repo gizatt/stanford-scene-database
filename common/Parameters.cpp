@@ -4,6 +4,7 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
 void Parameters::Init(const std::string &filename)
 {
     std::vector<std::string> fileLines = Utility::GetFileLines(filename, 3);

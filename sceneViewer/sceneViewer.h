@@ -4,6 +4,9 @@
 
 #include "../common/Common.h"
 
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
+
 class SceneViewer
 {
 public:
@@ -29,3 +32,5 @@ private:
 
     int _mouseButton, _mouseX, _mouseY;
 };
+
+}

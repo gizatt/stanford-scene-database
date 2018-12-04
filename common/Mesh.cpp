@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 void MeshMaterial::Set() const
 {
     if(texture == 0)

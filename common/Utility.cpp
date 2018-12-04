@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 bool Utility::FileExists(const std::string &filename)
 {
     std::ifstream file(filename);

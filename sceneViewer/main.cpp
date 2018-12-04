@@ -6,6 +6,8 @@
 
 #include "sceneViewer.h"
 
+using namespace stanford_scene_database;
+
 static SceneViewer* g_Viewer = NULL;
 
 static const float framesPerSecond = 60.0f;

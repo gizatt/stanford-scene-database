@@ -1,8 +1,14 @@
+#pragma once
+
 //
 // ModelInstance.h
 //
 
 #include "Common.h"
+
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 class ModelInstance
 {
@@ -32,3 +38,5 @@ private:
     Vec3f _parentContactNormal;
     Vec3f _parentOffset;
 };
+
+}

@@ -1,8 +1,13 @@
+#pragma once
+
 //
 // Utility.h
 //
 
 #include "Common.h"
+
+namespace stanford_scene_database {
+using namespace stanford_scene_database;
 
 namespace Utility
 {
@@ -19,3 +24,4 @@ namespace Utility
     GLuint MakeOpenGLBitmap(const std::string &filename);
     void checkGLError(std::string str);
 };
+}

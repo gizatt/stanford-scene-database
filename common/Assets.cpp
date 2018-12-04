@@ -4,6 +4,8 @@
 
 #include "Common.h"
 
+using namespace stanford_scene_database;
+
 Model* Assets::GetModel(const Parameters &params, const std::string &modelName)
 {
     if(_models.find(modelName) != _models.end())
