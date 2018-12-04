@@ -7,16 +7,17 @@
 #include "Common.h"
 
 namespace stanford_scene_database {
-using namespace stanford_scene_database;
 
 struct Parameters
 {
     void Init(const std::string &filename);
+    void Init() {}; // For manual construction
 
-    std::string databaseDirectory;
-    std::string defaultScene;
+	public:
+	    std::string databaseDirectory;
+	    std::string defaultScene;
 
-    std::string textQuery;
+	    std::string textQuery;
 };
 
 }

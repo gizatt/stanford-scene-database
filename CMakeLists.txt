@@ -1,8 +1,16 @@
 cmake_minimum_required(VERSION 3.5)
 project (stanford_scene_database)
 
+set(CMAKE_C_COMPILER /usr/bin/clang-5.0)
+set(CMAKE_CXX_COMPILER /usr/bin/clang++-5.0)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_STANDARD} -fstrict-aliasing -Wno-unknown-pragmas -Wno-unused-function")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+link_libraries("-lc++abi")
+link_libraries("-static-libstdc++")
+
 
 # Set default install prefix
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
@@ -42,16 +50,16 @@ set(STANFORD_SCENE_COMMON_HDRS
     common/Utility.h
     common/Vec3f.h)
 
-add_library(stanford_scene_common ${STANFORD_SCENE_COMMON_HDRS} 
+add_library(stanford_scene_common STATIC ${STANFORD_SCENE_COMMON_HDRS} 
 			${STANFORD_SCENE_COMMON_SRCS})
 
-target_link_libraries(stanford_scene_common freeimage ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+target_link_libraries(stanford_scene_common stdc++ freeimage ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
 
 INSTALL(TARGETS stanford_scene_common
         DESTINATION "lib"
         )
 INSTALL(FILES ${STANFORD_SCENE_COMMON_HDRS}
-        DESTINATION "include/stanford_scene_common"
+        DESTINATION "include/stanford_scene_database/common"
         )
 
 set(SCENE_VIEWER_SRCS
@@ -60,6 +68,6 @@ set(SCENE_VIEWER_SRCS
 	sceneViewer/sceneViewer.h)
 add_executable(scene_viewer ${SCENE_VIEWER_SRCS})
 target_link_libraries(scene_viewer stanford_scene_common freeimage ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
-INSTALL(TARGETS stanford_scene_common
+INSTALL(TARGETS scene_viewer
 		DESTINATION "bin"
 		)

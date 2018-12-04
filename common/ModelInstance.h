@@ -8,7 +8,6 @@
 
 
 namespace stanford_scene_database {
-using namespace stanford_scene_database;
 
 class ModelInstance
 {
@@ -25,6 +24,15 @@ public:
         _children.push_back(child);
     }
     void Render();
+    const ModelInstance * GetParent() const {
+        return _parent;
+    }
+    const Matrix4& GetTransform() const {
+        return _transform;
+    }
+    const Model& GetModel() const {
+        return *_model;
+    }
 
 private:
     Model *_model;

@@ -6,7 +6,6 @@
 #include "Common.h"
 
 namespace stanford_scene_database {
-using namespace stanford_scene_database;
 
 class Assets
 {

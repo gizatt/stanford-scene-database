@@ -8,7 +8,6 @@
 
 
 namespace stanford_scene_database {
-using namespace stanford_scene_database;
 
 class Assets;
 class Model
@@ -21,15 +20,15 @@ public:
     //
     // Accessors
     //
-    inline const Vec3f& BoundingBoxMin()
+    inline const Vec3f& BoundingBoxMin() const
     {
         return _boundingBoxMin;
     }
-    inline const Vec3f& BoundingBoxMax()
+    inline const Vec3f& BoundingBoxMax() const
     {
         return _boundingBoxMax;
     }
-    inline const std::string& Hash()
+    inline const std::string& Hash() const
     {
         return _hash;
     }

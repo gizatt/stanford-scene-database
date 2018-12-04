@@ -5,7 +5,7 @@
 #ifndef __MESH_H
 #define __MESH_H
 
-using namespace stanford_scene_database;
+namespace stanford_scene_database {
 
 #include "Common.h"
 
@@ -40,5 +40,7 @@ public:
 private:
     GLuint _displayList;
 };
+
+}
 
 #endif

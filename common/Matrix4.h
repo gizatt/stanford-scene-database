@@ -7,7 +7,6 @@
 #include "Vec3f.h"
 
 namespace stanford_scene_database {
-using namespace stanford_scene_database;
 
 class Matrix4
 {
